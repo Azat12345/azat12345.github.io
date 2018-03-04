@@ -1,0 +1,107 @@
+.header-menu {
+    position: absolute;
+    z-index: 9999;
+    top: rem(125);
+    right: 0;
+    left: 0;
+
+    color: white;
+
+    transition: all 1s;
+    .wrapper {
+        display: flex;
+        width: rem(1174) !important;
+        height: rem(78);
+
+        background-color: #080425;
+
+        transition: all 1s;
+    }
+    &_fixed {
+        position: fixed;
+        top: 0;
+        .wrapper {
+            width: 100% !important;
+            height: rem(50) !important;
+
+        }
+        .header-menu {
+            &__item-menu {
+                top: rem(50) !important;
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        height: 100%;
+        padding-right: rem(10);
+        padding-left: rem(50);
+
+        font-family: $proxima;
+        font-size: rem(13);
+        font-weight: 600;
+        letter-spacing: rem(0.8);
+        text-transform: uppercase;
+
+        cursor: pointer;
+        &:after {
+            content: "";
+
+            position: relative;
+            top: rem(-2);
+
+            display: block;
+            display: block;
+            width: rem(5);
+            height: rem(5);
+            margin-left: rem(10);
+
+            border-bottom: 1px solid white;
+            border-left: 1px solid white;
+            transform: rotate(-45deg);
+        }
+        &_active {
+            &:after {
+                transform: rotate(135deg);
+            }
+        }
+    }
+    &__item-menu {
+        position: absolute;
+        top: rem(78);
+        right: 0;
+        left:0;
+
+        display: none;
+
+        font-family: $proxima;
+        font-size: rem(14);
+
+        font-weight: 400;
+
+        background-color: #080425;
+    }
+    &__menu-point {
+        display: flex;
+        align-items: center;
+        height: rem(50);
+        padding-right: rem(10);
+        padding-left: rem(50);
+        overflow: hidden;
+
+        font-weight: 400;
+
+        color: white;
+        text-decoration: none;
+        text-transform: none;
+        &:hover {
+            background-color: #38354f;
+        }
+    }
+}

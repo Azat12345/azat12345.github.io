@@ -1,0 +1,180 @@
+.contacts {
+    display: flex;
+    &__content {
+        display: flex;
+    }
+    &_header {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        left: 0;
+
+        padding-top: rem(12);
+        .wrapper {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+
+            border-bottom: 0 !important;
+        }
+        .contacts {
+            &__item {
+                color: $gray !important;
+                &_email {
+                    display: none !important;
+                }
+                &_header {
+                    display: flex;
+                }
+                &_phone {
+                    .contacts {
+                        &__item-wrapper {
+                            top: rem(3);
+
+                            justify-content: center;
+                        }
+                    }
+                }
+                &_adress {
+                    .contacts {
+                        &__item-wrapper {
+                            top: rem(3);
+                            left: rem(8);
+
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    &__item {
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        width: 33%;
+
+
+        &_phone {
+
+            .contacts {
+                &__item-wrapper {
+                    left: rem(-20);
+                    &:before {
+                        background-image: url('%=static=%assets/contacts/phone.svg');
+                    }
+                }
+                &__item-title {
+                    margin-bottom: rem(7);
+                }
+                &__item-value {
+                    letter-spacing: rem(0.5);
+                }
+            }
+        }
+        &_header {
+            display: none;
+            .contacts {
+                &__item-wrapper {
+                    left: rem(7);
+
+                    padding-left: 0;
+                }
+            }
+        }
+        &_email {
+            .contacts {
+                &__item-value {
+                    letter-spacing: rem(0.3);
+
+                    border-bottom: 1px solid $orange;
+                    cursor: pointer;
+
+                    transition: all 0.2s;
+                    a {
+                        color: black;
+                        text-decoration: none;
+
+                        transition: all 0.2s;
+                        &:hover {
+                            color: $orange;
+                        }
+                    }
+                    &:hover {
+                        border-bottom: 1px solid transparent;
+                    }
+                }
+                &__item-title {
+                    margin-bottom: rem(6);
+                }
+                &__item-wrapper {
+                    position: relative;
+                    left: rem(8);
+                    &:before {
+                        width: rem(15) !important;
+                        height: rem(15) !important;
+
+                        background-image: url('%=static=%assets/contacts/mail.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+
+        }
+        &_adress {
+
+            .contacts {
+                &__item-wrapper {
+                    left: rem(15);
+                    &:before {
+                        background-image: url('%=static=%assets/contacts/geo.svg');
+                    }
+                }
+                &__item-title {
+                    margin-bottom: rem(7);
+                }
+            }
+        }
+        
+    }
+    &__item-wrapper {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        padding-left: rem(31);
+        &:before {
+            content: "";
+
+            position: absolute;
+            top: 50%;
+            left: 0;
+
+            display: block;
+            width: rem(14);
+            height: rem(14);
+            
+            background-repeat: no-repeat;
+            transform: translateY(-50%);
+        }
+    }
+    &__item-title {
+        font-family: $proxima;
+        font-size: rem(14);
+        letter-spacing: rem(0.4);
+    }
+    &__item-value {
+        font-family: $proxima;
+        font-size: rem(14);
+        font-weight: bold;
+    }
+    .wrapper {
+        padding-top: rem(54);
+        padding-bottom: rem(56);
+
+        border-bottom: 1px solid $gray;
+    }
+}

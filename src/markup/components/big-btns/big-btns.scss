@@ -1,0 +1,14 @@
+.big-btns {
+    display: flex;
+    .wrapper {
+        display: flex;
+        padding-top: rem(120);
+    }
+    .grid {
+        z-index: 2;
+    }
+    &_btn {
+        width: 50%;
+        height: rem(140);
+    }
+}

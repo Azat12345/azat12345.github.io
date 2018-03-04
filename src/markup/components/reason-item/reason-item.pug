@@ -1,0 +1,7 @@
+mixin reason-item(data)
+    +b.reason-item()&attributes(attributes)
+        block
+        +e.IMG.img(src= data.img width='4.8125rem' height='4.8125rem')
+        +e.title.animated!= data.title
+        +e.text.animated!= data.text
+

@@ -1,0 +1,87 @@
+.our-rooms {
+    &__title {
+        display: block;
+        margin-top: rem(10);
+        margin-bottom: rem(46);
+
+        font-family: $pfd;
+        font-size: rem(52);
+        line-height: rem(48);
+        text-align: center;
+        letter-spacing: rem(1.1);
+    }
+    &__slider-page {
+        display: inline-flex !important;
+        height: rem(390);
+    }
+    &__slider-img {
+        position: relative;
+
+        width: 50%;
+        
+
+        background-image: url('%=static=%assets/our-rooms/bg-rooms.png');
+        &:after {
+            content: "";
+
+            position: absolute;
+            top: rem(40);
+            right: 0;
+            bottom: rem(38);
+
+            display: block;
+            width: rem(40);
+
+            background-color: white;
+        }
+    }
+    &__slider-block {
+        width: 50%;
+        padding-top: rem(73);
+    }
+    &__slider-title {
+        margin-bottom: rem(15);
+
+        font-family: $pfd;
+        font-size: rem(24);
+        font-weight: bold;
+        letter-spacing: rem(1);
+    }
+    &__slider-wrapper {
+        position: relative;
+
+        padding-right: rem(30);
+        padding-left: rem(85);
+        &:before {
+            content: "";
+
+            position: absolute;
+            top: rem(15);
+            left: 0;
+
+            display: block;
+            width: rem(63);
+            height: 1px;
+
+            background-color: $gray;
+        }
+    }
+    &__slider-text {
+        margin-bottom: rem(21);
+
+        font-family: $proxima;
+        font-size: rem(18);
+        line-height: rem(28);
+        color: $gray;
+
+    }
+    .grid {
+        z-index: 2;
+    }
+    .wrapper {
+        padding-top: rem(30);
+    }
+    .slick-arrow {
+        z-index: 3;
+    }
+}

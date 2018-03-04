@@ -1,0 +1,24 @@
+include ../btn/btn
+include ../grid/grid
+
+mixin slider(data)
+    +b.slider()&attributes(attributes)
+        block
+        div.wrapper.slider__wrapper
+            +grid
+            +e.mouse
+        +e.content
+            +e.slide
+                div.wrapper
+                    +e.slide-header Детские фотосессии<br>по разумным ценам
+                    +e.slide-text Забронируйте фотосъемку и получите скидку 50%<br>на следующую фотосессию для всей семьи!
+                    +e.btn-container
+                        +btn.slider__btn.slider__btn_1 Арендовать зал
+                        +btn.slider__btn.slider__btn_2 Заказать съемку
+            +e.slide
+                div.wrapper
+                    +e.slide-header Детские фотосессии<br>по разумным ценам
+                    +e.slide-text Забронируйте фотосъемку и получите скидку 50%<br>на следующую фотосессию для всей семьи!
+                    +e.btn-container
+                        +btn.slider__btn.slider__btn_1 Арендовать зал
+                        +btn.slider__btn.slider__btn_2 Заказать съемку

@@ -1,0 +1,13 @@
+include ../btn/btn
+
+mixin photo-item(data)
+    +b.photo-item()&attributes(attributes)
+        block
+        +e.img(src= data.img)
+        +btn.btn_gallery.photo-item__btn
+        if data.size === 'big'
+            +e.A(href=jv0).link._big.animated
+                div!= data.text
+        else
+            +e.A(href=jv0).link.animated
+                div!= data.text

@@ -1,0 +1,15 @@
+include ../grid/grid
+include ../block-decoration/block-decoration
+include ../reason-item/reason-item
+
+mixin five-reasons(data)
+    +b.five-reasons()&attributes(attributes)
+        block
+        div.wrapper
+            +grid
+            +block-decoration Наши преимущества
+            +e.H1.title.animated 5 причин прийти к нам
+            +e.content
+                each item in reasonItem
+                    +reason-item(item).five-reasons__item
+            

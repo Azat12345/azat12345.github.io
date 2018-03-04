@@ -1,0 +1,140 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: rem(50);
+    padding-right: rem(23);
+    padding-left: rem(23);
+
+    font-family: $gotham;
+    font-size: rem(15);
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+
+    background-color: #fab91e;
+
+    transition: background-color .2s;
+    &:hover {
+        background-color: #d39500;
+    }
+    &_gallery {
+        width: rem(44);
+        height: rem(44);
+        padding: 0;
+
+        background-image: url('%=static=%assets/btn/arrow.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &_big-btns {
+        position: relative;
+
+        justify-content: flex-start;
+        padding-top: rem(20);
+        padding-right: rem(295);
+        padding-bottom: rem(11);
+        padding-left: rem(97);
+
+        font-family: $pfd;
+        font-size: rem(16);
+        font-weight: bold;
+        line-height: rem(24);
+        letter-spacing: rem(0.6);
+        &:before {
+            content: "";
+
+            position: absolute;
+            top: 53%;
+            right: rem(59);
+
+            display: block;
+            width: rem(85);
+            height: rem(85);
+
+            background-repeat: no-repeat;
+            transform: translateY(-50%);
+        }
+        &:after {
+            content: "";
+
+            position: absolute;
+            top: 50%;
+            right: rem(188);
+
+            display: block;
+
+            display: inline-block;
+            width: rem(20);
+            height: rem(20);
+
+            font-family: $gotham;
+            font-size: rem(16);
+            font-weight: bold;
+
+            background-image: url('%=static=%assets/btn/arrow.png');
+            background-repeat: no-repeat;
+            background-position: center;
+
+            transform: translateY(-50%);
+
+        }
+        &_1 {
+            &:before {
+                background-image: url('%=static=%assets/big-btns/btn1.svg');
+            }
+        }
+        &_2 {
+            &:before {
+                background-image: url('%=static=%assets/big-btns/btn2.svg');
+            }
+        }
+    }
+}
+
+.our-rooms .slick-arrow, .slider .slick-arrow {
+    top: auto !important;
+    bottom: rem(-40) !important;
+    left: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+        width: rem(44);
+        height: rem(44);
+        padding: 0;
+
+    font-family: $gotham;
+    font-size: rem(15);
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+
+    background-color: #fab91e;
+        background-image: url('%=static=%assets/btn/arrow.png');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    transition: background-color .2s;
+    &:before {
+        display: none;
+    }
+    &.slick-prev {
+        transform: rotate(180deg) translateY(50%) translateX(100%);
+    }
+    &:hover {
+        background-color: #d39500;
+    }
+    
+}
+
+.slider .slick-arrow {
+    background-color: transparent !important;
+    background-image: url('%=static=%assets/btn/slider-arrow.png');
+
+    transition: all 0.2s;
+    &:hover {
+        background-image: url('%=static=%assets/btn/slider-arrow_active.png');
+    }
+}

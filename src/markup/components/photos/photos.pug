@@ -1,0 +1,13 @@
+include ../block-decoration/block-decoration
+include ../photo-item/photo-item
+
+mixin photos(data)
+    +b.photos()&attributes(attributes)
+        block
+        div.wrapper
+            +grid
+            +block-decoration Услуги
+            +e.H1.title.animated Фотосессии
+            +e.content
+                each item in photoItem
+                    +photo-item(item).photos__item

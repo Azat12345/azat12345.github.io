@@ -1,0 +1,52 @@
+.our-study {
+
+
+    text-align: center;
+
+    background-image: url('%=static=%/assets/our-study/bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    .wrapper {
+        padding-top: rem(162);
+        margin-top: rem(-120);
+    }
+    &__title {
+        display: block;
+        margin-top: rem(6);
+        margin-bottom: rem(38);
+
+        font-family: $pfd;
+        font-size: rem(52);
+        line-height: rem(48);
+        text-align: center;
+        letter-spacing: rem(1.2);
+    }
+    &__label {
+        padding-right: rem(105);
+        padding-left: rem(105);
+        margin-bottom: rem(29);
+
+        font-family: $pfd;
+        font-size: rem(22);
+        font-style: italic;
+        line-height: rem(36);
+        text-align: center;
+
+        transform: translateX(rem(9));
+    }
+    &__text {
+        padding-right: rem(215);
+        padding-left: rem(215);
+        margin-bottom: rem(42);
+
+        font-family: $proxima;
+        font-size: rem(18);
+        line-height: rem(28);
+        color: $gray;
+        text-align: center;
+        letter-spacing: rem(-0.3);
+        div {
+            margin-bottom: rem(10);
+        }
+    }
+}

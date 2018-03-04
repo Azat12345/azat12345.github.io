@@ -1,0 +1,17 @@
+include ../grid/grid
+
+mixin author(data)
+    +b.author()&attributes(attributes)
+        block
+        div.wrapper
+            +grid
+            +e.content
+                +e.left-side
+                    +e.ip © ИП Фёдоров С.С., 2017
+                +e.right-side
+                    +e.tian
+                        +e.tian-group Интернет-агентство Tian Group:
+                        +e.chelly
+                            +e.A.create(href=jv0) создание
+                            +e.SPAN.and &nbsp;и&nbsp;
+                            +e.A.boost(href=jv0) продвижение сайтов Челябинск

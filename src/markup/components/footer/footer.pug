@@ -1,0 +1,8 @@
+include ../contacts/contacts
+include ../author/author
+
+mixin footer(data)
+    +b.FOOTER.footer()&attributes(attributes)
+        block
+        +contacts
+        +author

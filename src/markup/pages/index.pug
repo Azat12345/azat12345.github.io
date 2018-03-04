@@ -1,0 +1,24 @@
+extends ../layouts/default
+include ../components/wrapper/wrapper
+include ../components/slider/slider
+include ../components/grid/grid
+include ../components/five-reasons/five-reasons
+include ../components/our-study/our-study
+include ../components/photos/photos
+include ../components/our-rooms/our-rooms
+include ../components/big-btns/big-btns
+include ../components/contacts/contacts
+include ../components/header-menu/header-menu
+
+block vars
+    -pageSettings.title = 'Главная';
+
+block content
+    +contacts.contacts_header
+    +header-menu
+    +slider
+    +five-reasons
+    +our-study
+    +photos
+    +our-rooms
+    +big-btns

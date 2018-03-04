@@ -1,0 +1,17 @@
+/* Your custom fonts here */
+
+/* Example
+
+@include font-face('Open Sans', '../fonts/OpenSans-Italic', normal, italic, $exts: woff woff2 ttf);
+
+// Var for using custom font
+$font-1: 'Open Sans', Helvetica, Arial, sans-serif;
+*/
+
+@include font-face('Gotham Pro', '../fonts/gotham-pro/regular', normal, normal, $exts: woff ttf eot);
+@include font-face('Gotham Pro', '../fonts/gotham-pro/medium', 500, normal, $exts: ttf);
+@include font-face('Play Fair Display', '../fonts/play-fair-display/bold', bold, normal, $exts: woff ttf eot);
+@include font-face('Play Fair Display', '../fonts/play-fair-display/italic', normal, italic, $exts: woff ttf eot);
+@include font-face('Proxima Nova', '../fonts/proxima-nova/regular', normal, normal, $exts: woff ttf eot);
+@include font-face('Proxima Nova', '../fonts/proxima-nova/bold', bold, normal, $exts: woff ttf);
+@include font-face('Proxima Nova', '../fonts/proxima-nova/semibold', 600, normal, $exts: woff ttf otf eot);

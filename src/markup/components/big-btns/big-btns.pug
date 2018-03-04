@@ -1,0 +1,10 @@
+include ../btn/btn
+include ../grid/grid
+
+mixin big-btns(data)
+    +b.big-btns()&attributes(attributes)
+        block
+        div.wrapper
+            +grid
+            +btn.btn_big-btns.btn_big-btns_1.big-btns_btn Организация мероприятий в наших залах
+            +btn.btn_big-btns.btn_big-btns_2.big-btns_btn Расписание и бронирование залов

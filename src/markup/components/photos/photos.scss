@@ -1,0 +1,30 @@
+.photos {
+    &__title {
+        display: block;
+        margin-top: rem(7);
+        margin-bottom: rem(50);
+
+        font-family: $pfd;
+        font-size: rem(52);
+        line-height: rem(48);
+        text-align: center;
+        letter-spacing: rem(1.2);
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-right: rem(51);
+        margin-bottom: rem(40);
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+    .grid {
+        z-index: 2;;
+    }
+    .wrapper {
+        padding-top: rem(70);
+    }
+}

@@ -1,0 +1,25 @@
+.block-decoration {
+    position: relative;
+
+    padding-top: rem(17);
+
+    font-family: $proxima;
+    font-size: rem(12);
+    color: $gray;
+    text-align: center;
+    text-transform: uppercase;
+    &:before {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        display: block;
+        width: rem(12);
+        height: rem(12);
+
+        background-color: #fab91e;
+        transform: translateX(-50%);
+    }
+}

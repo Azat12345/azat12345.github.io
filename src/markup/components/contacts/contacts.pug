@@ -1,0 +1,23 @@
+include ../grid/grid
+
+mixin contacts(data)
+    +b.contacts()&attributes(attributes)
+        block
+        div.wrapper
+            +grid
+            +e.content
+                +e.item.contacts__item_phone
+                    +e.item-wrapper
+                        +e.item-title телефон администратора
+                        +e.item-value 8 800 2000 600
+                +e.item.contacts__item_email
+                    +e.item-wrapper
+                        +e.item-title e-mail
+                        +e.item-value <a href='mailto:vangog.fotostudia@yandex.ru'>vangog.fotostudia@yandex.ru</a>
+                +e.item.contacts__item_header
+                    +e.item-wrapper
+                        +e.IMG.item-logo(src = '%=static=%img/assets/contacts/header-logo.png' width='97' height='102')
+                +e.item.contacts__item_adress
+                    +e.item-wrapper
+                        +e.item-title адрес фотостудии
+                        +e.item-value Челябинск, Худякова, 12а

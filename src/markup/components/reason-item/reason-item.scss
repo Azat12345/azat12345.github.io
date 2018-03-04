@@ -1,0 +1,31 @@
+.reason-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: rem(10);
+    padding-left: rem(10);
+    &__img {
+        width: rem(77);
+        height: rem(77);
+    }
+    &__title {
+        margin-top: rem(32);
+        margin-bottom: rem(10);
+
+        font-family: $pfd;
+        font-size: rem(16);
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: rem(0.4);
+    }
+    &__text {
+        padding-right: rem(23);
+        padding-left: rem(23);
+
+        font-family: $proxima;
+        font-size: rem(14);
+        line-height: rem(20);
+        color: $gray;
+        text-align: center;
+    }
+}

@@ -1,0 +1,25 @@
+.five-reasons {
+    &__title {
+        display: block;
+        margin-top: rem(7);
+        margin-bottom: rem(58);
+
+        font-family: $pfd;
+        font-size: rem(52);
+        line-height: rem(48);
+        text-align: center;
+        letter-spacing: rem(0.9);
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        width: calc(100% / 3);
+        margin-bottom: rem(23);
+    }
+    .wrapper {
+        padding-top: rem(70);
+    }
+}

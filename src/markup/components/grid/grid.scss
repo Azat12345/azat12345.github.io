@@ -1,0 +1,19 @@
+.grid {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    pointer-events: none;
+    &__column {
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        border-right: 1px solid rgba(165, 155, 95, .1);
+        &:first-child {
+            border-left: 1px solid rgba(165, 155, 95, .1);
+        }
+    }
+}

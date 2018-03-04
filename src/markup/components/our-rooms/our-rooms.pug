@@ -1,0 +1,26 @@
+include ../grid/grid
+include ../block-decoration/block-decoration
+include ../btn/btn
+
+mixin our-rooms(data)
+    +b.our-rooms()&attributes(attributes)
+        block
+        div.wrapper
+            +grid
+            +block-decoration Аренда
+            +e.H1.title.animated Наши залы
+            +e.slider
+                +e.slider-page
+                    +e.slider-img
+                    +e.slider-block
+                        +e.slider-title Футуризм
+                        +e.slider-wrapper
+                            +e.slider-text.animated Просторный, светлый зал, выполненный в стиле футуризм и модерн.
+                            +btn.btn_rooms.slider__btn Узнать больше о зале
+                +e.slider-page
+                    +e.slider-img
+                    +e.slider-block
+                        +e.slider-title Футуризм
+                        +e.slider-wrapper
+                            +e.slider-text.animated Просторный, светлый зал, выполненный в стиле футуризм и модерн.
+                            +btn.btn_rooms.slider__btn Узнать больше о зале

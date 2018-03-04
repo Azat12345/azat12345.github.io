@@ -1,0 +1,14 @@
+include ../block-decoration/block-decoration
+include ../btn/btn
+
+mixin our-study(data)
+    +b.our-study()&attributes(attributes)
+        block
+        div.wrapper
+            +grid
+            +block-decoration О компании
+            +e.H1.title.animated Наша фотостудия
+            +e.label.animated Van Gog фотостудия это творческое &nbsp;арт - пространство для реализации любых идей и задач!
+            +e.text.animated <div>Это не просто студия для съемки, это целый комплекс услуг для вас и ваших близких!</div>
+                |Мы работаем по системе «все включено», обратившись к нам важно нужно только одно, рассказать, что вы хотите, а мы в свою очередь предложим варианты фотосъемки и варианты для реализации ваших идей.
+            +btn Больше о фотостудии

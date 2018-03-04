@@ -1,0 +1,80 @@
+.author {
+    &__content {
+        display: flex;
+
+    }
+    &__left-side {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        padding-top: rem(32);
+        padding-left: rem(68);
+    }
+    &__right-side {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        padding-top: rem(27);
+        padding-left: rem(195);
+    }
+    &__ip {
+        font-family: $proxima;
+        font-size: rem(12);
+        color: $gray;
+        letter-spacing: rem(0.4);
+        text-transform: uppercase;
+    }
+    &__tian {
+        position: relative;
+
+        padding-left: rem(43);
+        &:before {
+            content: "";
+
+            position: absolute;
+            top: 50%;
+            left:0;
+
+            display: block;
+            width: rem(35);
+            height: rem(35);
+
+            background-image: url('%=static=%assets/author/logo-tian.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: translateY(-50%);
+        }
+    }
+    &__tian-group {
+        font-family: $proxima;
+        font-size: rem(12);
+        color: $gray;
+        letter-spacing: rem(0.1);
+        text-transform: uppercase;
+    }
+    &__chelly {
+        font-family: $proxima;
+        font-size: rem(12);
+        color: $gray;
+        a {
+          font-family: $proxima;
+          font-size: rem(12);  
+          color: $gray;
+          text-decoration: none;
+          text-transform: none;
+
+          border-bottom: 1px solid $gray;
+
+          transition: all .2s;
+          &:hover {
+              color: $orange;
+
+              border-bottom: 1px solid transparent;
+          }
+        }
+    }
+    .wrapper {
+        min-height: rem(102);
+        padding: rem(10);
+    }
+}
